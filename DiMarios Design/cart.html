@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DiMarios wood fired pizza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiMarios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+<body>
+    <img class="background" src="images/paymentbackground.svg" alt="background">
+    <!--top navigation section-->
+    <div class="top-section">
+        <div class="flex-container">
+            <div class="logo">
+               <a href="index.html"> <img class="logo-name" src="images/logo.svg" alt="logo" ></a>
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="jobs.html">jobs</a></li>
+                </ul>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="loggin.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li class="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <img  src="images/cart.svg" alt="shopping-cart"><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--main content-->
+    <div class="main-container">
+
+        <div class="left-payment-container">
+            <h2 class="header1">CARD DETAILS</h2>
+            <!--left payment container form-->
+            <div class="payment-form">
+                <form>
+                    <div class="col">
+                        <label for="cname">Name on Card</label><br>
+                        <input type="text" id="cname" name="cardname" placeholder="enter name on card..."><br>
+                        <label for="ccnum">Credit card number</label><br>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="0000 0000 0000 0000"><br>
+                        <div class="inline">
+                            <div class="date">
+                                <label for="expdate">Exp Date</label><br>
+                                <input type="text" id="expdate" name="expdate" placeholder="MM/YY">
+                            </div>
+                            <div class="ccv">
+                                <label for="cvv">CVV</label><br>
+                                <input type="text" id="cvv" name="cvv" placeholder="000"> 
+                            </div>
+                        </div>
+                        <div class="button cancel"><p>CANCEL</p></div><br>
+                    </div>
+                    <div class="col">
+                        <label for="adr"></i> Address line 1</label><br>
+                        <input type="text" id="adr" name="address" placeholder="number and name of street..."><br>
+                        <label for="adr"></i> Address line 2</label><br>
+                        <input type="text" id="adr" name="address" placeholder="name of city..."><br>
+                        <label for="adr"></i> Address line 3</label><br>
+                        <input type="text" id="adr" name="address" placeholder="name of county..."><br>
+                        <div class="button pay"><p>PAY</p></div>
+                    </div>
+                </form>
+                <div class="securepayments">
+                    <img src="images/securepayment.png" alt="securepayments">
+                </div>
+            </div>
+                <!--right cart items list continer-->
+        </div>
+        <div class="right-product-container">
+            <h2 class="header2">YOUR ORDER</h2>
+            <div class="products-container">
+                <div class="product-header">
+                    <h5 class="product-title">PRODUCT</h5>
+                    <h5 class="price">PRICE</h5>
+                    <h5 class="quantity">QUANTITY</h5>
+                    <h5 class="total">TOTAL</h5>
+                </div>
+                <div class="products">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript/cart.js"></script>
+ 
+
+
+  
+    
+    
+     
+</body>
+</html>

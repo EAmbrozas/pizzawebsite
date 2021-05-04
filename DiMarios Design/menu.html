@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DiMarios wood fired pizza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiMarios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+
+<body>
+    <img class="background" src="images/background.jpg" alt="background">
+    <!--top navigation section-->
+    <div class="top-section">
+        <div class="flex-container">
+            <div class="logo">
+               <a href="index.html"> <img class="logo-name" src="images/logo.svg" alt="logo" ></a>
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="jobs.html">jobs</a></li>
+                </ul>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="loggin.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li class="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <img  src="images/cart.svg" alt="shopping-cart"><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--main content-->
+    <div class="content">
+        <!--side navigation-->
+        <div class="side-bar">
+            <ul>
+                <li><a href="#pizzas">Pizzas</a></li>
+                <li><a href="#salads">Salads</a></li>
+                <li><a href="#sides">Sides</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+            </ul>
+        </div>
+        <!--manu-->
+        <div class="menu">
+            <!--pizza manu-->
+            <hr id="pizzas" class="pizzas">
+            <h2>PIZZAS</h2>
+            <div class="menu-flex-container">
+                <div class="menu-item">
+                  <img class="information-icon" id="information-button1" onclick="pizzaShow1()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/fairview-pizza.jpg" alt="fairviewPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">FAIRVIEW</h4>
+                        <p class="item-price">€20</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza1" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information1" id="pizza-information1" onclick="pizzaHide1()">
+                        <h5>Description</h5>
+                        <p>California Tomato Sauce, Mozzarella Cheese, Cheddar Cheese, Roasted Garlic, Green Olives,
+                            Spicy Sopressata, Ground Sausage & Pi Co. Crushed Peppers(Pepperoncini).</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button2" onclick="pizzaShow2()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/adelaide-pizza.jpg" alt="adelaidePizza">
+                    <div class="product-details">
+                        <h4 class="item-name">ADELAIDE</h4>
+                        <p class="item-price">€18</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza2" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information2" id="pizza-information2" onclick="pizzaHide2()">
+                        <h5>Description</h5>
+                        <p>White Sauce, Fior Di Latte, Smoked provolone, Mushrooms, Spinach, Truffle Oil</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button3" onclick="pizzaShow3()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/midtown-pizza.jpg" alt="midtownPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">MIDTOWN</h4>
+                        <p class="item-price">€20</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza3" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information3" id="pizza-information3" onclick="pizzaHide3()">
+                        <h5>Description</h5>
+                        <p>California Tomato Sauce, Mozzarella Cheese, Grilled Eggplant, Cherry Tomatoes, Banana
+                            Peppers.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button4" onclick="pizzaShow4()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/panforth-pizza.jpg" alt="panforthPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">PANFORTH</h4>
+                        <p class="item-price">€19</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza4" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information4" id="pizza-information4" onclick="pizzaHide4()">
+                        <h5>Description</h5>
+                        <p>Pesto Sauce, Mozzarella Cheese, Feta Cheese, Kalamata Olives, Mushrooms, Grilled Chicken,
+                            Cherry Tomatoes.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button5" onclick="pizzaShow5()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/shareway-pizza.jpg" alt="sharewayPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">SHAREWAY</h4>
+                        <p class="item-price">€18</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza5" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information5" id="pizza-information5" onclick="pizzaHide5()">
+                        <h5>Description</h5>
+                        <p>Olive Oil, Fior Di Latte, Artichoke, Basil, Roasted Garlic, Kalamata Olives and Bacon.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button6" onclick="pizzaShow6()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/yorkville-pizza.jpg" alt="yorkvillePizza">
+                    <div class="product-details">
+                        <h4 class="item-name">YORKVILLE</h4>
+                        <p class="item-price">€19</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza6" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information6" id="pizza-information6" onclick="pizzaHide6()">
+                        <h5>Description</h5>
+                        <p>Olive Oil, Fior Di Latte, Ricotta, Crushed Walnuts, Honey, Truffle Oil and Kosher Salt.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button7" onclick="pizzaShow7()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/olivia-pizza.jpg" alt="oliviaPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">OLIVIA</h4>
+                        <p class="item-price">€20</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza7" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information7" id="pizza-information7" onclick="pizzaHide7()">
+                        <h5>Description</h5>
+                        <p>Pesto Souce, Mozzarella Cheese, Kalamata Olives, Red Peppers, Broccoli.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button8" onclick="pizzaShow8()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/pizza/margherita-pizza.jpg" alt="margheritaPizza">
+                    <div class="product-details">
+                        <h4 class="item-name">MARGHERITA</h4>
+                        <p class="item-price">€18</p>
+                    </div>
+                    <div class="button"><a class="add-cart pizza8" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information pizza-information8" id="pizza-information8" onclick="pizzaHide8()">
+                        <h5>Description</h5>
+                        <p>Italian Presto Souce, Mozzarela Cheese, Spinach</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+            </div>
+            <!--salad menu-->
+            <hr id="salads">
+            <h2>SALADS</h2>
+            <div class="menu-flex-container">
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button1" onclick="saladShow1()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-breakfast-salad.jpeg" alt="breakfastSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">BREAKFAST</h4>
+                        <p class="item-price">€11</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad1" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information1" id="salad-information1" onclick="saladHide1()">
+                        <h5>Description</h5>
+                        <p>Arugula, Avocado, Hard Boiled Egg, Bacon, Cherry Tomatoes, Red Onion, Corn.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button2" onclick="saladShow2()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-caesar-salad.jpeg" alt="caesarSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">CAESAR</h4>
+                        <p class="item-price">€13</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad2" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information2" id="salad-information2" onclick="saladHide2()">
+                        <h5>Description</h5>
+                        <p>Romaine, Parmesan Cheese, Grilled Chicken, Croutons, Cherry Tomatoes & Caesar Dressing.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button3" onclick="saladShow3()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-chicken-pesto-salad.jpeg" alt="chickenPestoSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">CHICKEN</h4>
+                        <p class="item-price">€12</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad3" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information3" id="salad-information3" onclick="saladHide3()">
+                        <h5>Description</h5>
+                        <p>Spring Mix, Grilled Chicken, Sun-Dried Tomatoes, Roasted Red Peppers, Roasted Garlic, Goat Cheese, Pear with Pesto Dressing.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button4" onclick="saladShow4()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-greek-salad.jpeg" alt="greekSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">GREEK</h4>
+                        <p class="item-price">€11</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad4" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information4" id="salad-information4" onclick="saladHide4()">
+                        <h5>Description</h5>
+                        <p>Romaine Lettuce, Kalamata Olives, Cucumber, Cherry Tomatoes, Feta Cheese, Red Onion, with Greek Dressing</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button5" onclick="saladShow5()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-spicy-kick-salad.jpeg" alt="spicyKickSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">SPICY</h4>
+                        <p class="item-price">€12</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad5" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information5" id="salad-information5" onclick="saladHide5()">
+                        <h5>Description</h5>
+                        <p>Spring Mix, Spicy Sopressata, Green Olives, Mushroom, Ricotta, Banana Peppers & Cherry Tomatoes. With Balsamic Vinaigrette.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button6" onclick="saladShow6()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-spring-salad.jpeg" alt="springSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">SPRING</h4>
+                        <p class="item-price">€11</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad6" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information6" id="salad-information6" onclick="saladHide6()">
+                        <h5>Description</h5>
+                        <p>Spring Mix, Arugula, Strawberries, Walnuts, Goat Cheese, Chicken, Cranberries & Corn. With Hone Lime Poppy Seed Dressing.</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button7" onclick="saladShow7()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/large-superfood-salad.jpeg" alt="superfoodSalad">
+                    <div class="product-details">
+                        <h4 class="item-name">SUPERFOOD</h4>
+                        <p class="item-price">€12</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad7" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information7" id="salad-information7" onclick="saladHide7()">
+                        <h5>Description</h5>
+                        <p>Romaine, Grilled Chicken, Quinoa, Chickpeas, Spinach, Broccoli, Cherry Tomatoes, Avocado, with Olive Oil & Balsamic Vinaigrette</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="information-icon" id="information-button8" onclick="saladShow8()" src="images/information.svg" alt="info-icon">
+                    <img class="product-image" src="images/menu/salad/tomato-caprese-salad.jpeg" alt="tomatoCapreseSsalad">
+                    <div class="product-details">
+                        <h4 class="item-name">TOMATO</h4>
+                        <p class="item-price">€11</p>
+                    </div>
+                    <div class="button"><a class="add-cart salad8" href="javascript:void(0)">Add to cart</a></div>
+                    <div class="product-information salad-information8" id="salad-information8" onclick="saladHide8()">
+                        <h5>Description</h5>
+                        <p>Arugula, Sliced Fior Di Latte, Cherry Tomatoes, Basil, Salt, Pepper, Olive Oil & Balsamic Vinegar</p>
+                        <h5>Allergens</h5>
+                        <p>MILK, EGG, SOY</p>
+                    </div>
+                </div>
+            </div>
+             <!--sides manu-->
+             <hr id="sides">
+             <h2>SIDES</h2>
+             <div class="menu-flex-container">
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button1" onclick="sideShow1()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/garlic-bread.png" alt="garlic-bread">
+                     <div class="product-details">
+                         <h4 class="item-name">GARLIC BREAD</h4>
+                         <p class="item-price">€4</p>
+                     </div>
+                     <div class="button"><a class="add-cart side1" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information1" id="side-information1" onclick="sideHide1()">
+                         <h5>Description</h5>
+                         <p>California Tomato Sauce, Mozzarella Cheese, Cheddar Cheese, Roasted Garlic, Green Olives,
+                             Spicy Sopressata, Ground Sausage & Pi Co. Crushed Peppers(Pepperoncini).</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+ 
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button2" onclick="sideShow2()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/french-fries.jpg" alt="french-fries">
+                     <div class="product-details">
+                         <h4 class="item-name">FRENCH FRIES</h4>
+                         <p class="item-price">€5</p>
+                     </div>
+                     <div class="button"><a class="add-cart side2" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information2" id="side-information2" onclick="sideHide2()">
+                         <h5>Description</h5>
+                         <p>White Sauce, Fior Di Latte, Smoked provolone, Mushrooms, Spinach, Truffle Oil</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button3" onclick="sideShow3()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/sweet-potato-fries.jpg" alt="sweet-potato-fries">
+                     <div class="product-details">
+                         <h4 class="item-name">SWEET P-FRIES</h4>
+                         <p class="item-price">€5</p>
+                     </div>
+                     <div class="button"><a class="add-cart side3" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information3" id="side-information3" onclick="sideHide3()">
+                         <h5>Description</h5>
+                         <p>California Tomato Sauce, Mozzarella Cheese, Grilled Eggplant, Cherry Tomatoes, Banana
+                             Peppers.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button4" onclick="sideShow4()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/onion-rings.jpg" alt="onion-rings">
+                     <div class="product-details">
+                         <h4 class="item-name">ONION RINGS</h4>
+                         <p class="item-price">€4</p>
+                     </div>
+                     <div class="button"><a class="add-cart side4" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information4" id="side-information4" onclick="sideHide4()">
+                         <h5>Description</h5>
+                         <p>Pesto Sauce, Mozzarella Cheese, Feta Cheese, Kalamata Olives, Mushrooms, Grilled Chicken,
+                             Cherry Tomatoes.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button5" onclick="sideShow5()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/mozzarella-sticks.jpg" alt="cheese-sticks">
+                     <div class="product-details">
+                         <h4 class="item-name">CHEESE STICKS</h4>
+                         <p class="item-price">€5</p>
+                     </div>
+                     <div class="button"><a class="add-cart side5" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information5" id="side-information5" onclick="sideHide5()">
+                         <h5>Description</h5>
+                         <p>Olive Oil, Fior Di Latte, Artichoke, Basil, Roasted Garlic, Kalamata Olives and Bacon.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+ 
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button6" onclick="sideShow6()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/chilli-bites.jpg" alt="chilli-bites">
+                     <div class="product-details">
+                         <h4 class="item-name">CHILLI BITES</h4>
+                         <p class="item-price">€5</p>
+                     </div>
+                     <div class="button"><a class="add-cart side6" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information6" id="side-information6" onclick="sideHide6()">
+                         <h5>Description</h5>
+                         <p>Olive Oil, Fior Di Latte, Ricotta, Crushed Walnuts, Honey, Truffle Oil and Kosher Salt.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button7" onclick="sideShow7()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/mini-burgers.jpg" alt="mini-burgers">
+                     <div class="product-details">
+                         <h4 class="item-name">MINI BURGERS</h4>
+                         <p class="item-price">€7</p>
+                     </div>
+                     <div class="button"><a class="add-cart side7" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information7" id="side-information7" onclick="sideHide7()">
+                         <h5>Description</h5>
+                         <p>Pesto Souce, Mozzarella Cheese, Kalamata Olives, Red Peppers, Broccoli.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button8" onclick="sideShow8()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/sides/chicken-wings.jpg" alt="chicken-wings">
+                     <div class="product-details">
+                         <h4 class="item-name">CHICKN WINGS</h4>
+                         <p class="item-price">€8</p>
+                     </div>
+                     <div class="button"><a class="add-cart side8" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information side-information8" id="side-information8" onclick="sideHide8()">
+                         <h5>Description</h5>
+                         <p>Italian Presto Souce, Mozzarela Cheese, Spinach</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+             </div>
+             <!--drinks manu-->
+             <hr id="drinks">
+             <h2>DRINKS</h2>
+             <div class="menu-flex-container">
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button1" onclick="drinkShow1()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/coke.jpg" alt="coke">
+                     <div class="product-details">
+                         <h4 class="item-name">COKE</h4>
+                         <p class="item-price">€3</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink1" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information1" id="drink-information1" onclick="drinkHide1()">
+                         <h5>Description</h5>
+                         <p>California Tomato Sauce, Mozzarella Cheese, Cheddar Cheese, Roasted Garlic, Green Olives,
+                             Spicy Sopressata, Ground Sausage & Pi Co. Crushed Peppers(Pepperoncini).</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+ 
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-butto21" onclick="drinkShow2()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/lime-soda.jpg" alt="lime-soda">
+                     <div class="product-details">
+                         <h4 class="item-name">LIME SODA</h4>
+                         <p class="item-price">€3</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink2" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information2" id="drink-information2" onclick="drinkHide2()">
+                         <h5>Description</h5>
+                         <p>White Sauce, Fior Di Latte, Smoked provolone, Mushrooms, Spinach, Truffle Oil</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button3" onclick="drinkShow3()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/apple-iced-tea.jpg" alt="apple-iced-tea">
+                     <div class="product-details">
+                         <h4 class="item-name">APPLE ICE TEA</h4>
+                         <p class="item-price">€4</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink3" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information3" id="drink-information3" onclick="drinkHide3()">
+                         <h5>Description</h5>
+                         <p>California Tomato Sauce, Mozzarella Cheese, Grilled Eggplant, Cherry Tomatoes, Banana
+                             Peppers.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button4" onclick="drinkShow4()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/iced-green-tea.jpg" alt="iced-green-tea">
+                     <div class="product-details">
+                         <h4 class="item-name">ICE GREEN TEA</h4>
+                         <p class="item-price">€4</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink4" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information4" id="drink-information4" onclick="drinkHide4()">
+                         <h5>Description</h5>
+                         <p>Pesto Sauce, Mozzarella Cheese, Feta Cheese, Kalamata Olives, Mushrooms, Grilled Chicken,
+                             Cherry Tomatoes.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button5" onclick="drinkShow5()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/mojito.jpg" alt="none-alcoholic-majito">
+                     <div class="product-details">
+                         <h4 class="item-name">MAJITO</h4>
+                         <p class="item-price">€4</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink5" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information5" id="drink-information5" onclick="drinkHide5()">
+                         <h5>Description</h5>
+                         <p>Olive Oil, Fior Di Latte, Artichoke, Basil, Roasted Garlic, Kalamata Olives and Bacon.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+ 
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button6" onclick="drinkShow6()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/orange-juice.jpg" alt="orange-juice">
+                     <div class="product-details">
+                         <h4 class="item-name">ORANGE JUICE</h4>
+                         <p class="item-price">€3</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink6" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information6" id="drink-information6" onclick="drinkHide6()">
+                         <h5>Description</h5>
+                         <p>Olive Oil, Fior Di Latte, Ricotta, Crushed Walnuts, Honey, Truffle Oil and Kosher Salt.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button7" onclick="drinkShow7()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/strawberry-lemonade.jpg" alt="strawberry-lemonade">
+                     <div class="product-details">
+                         <h4 class="item-name">STRAWBERRIE</h4>
+                         <p class="item-price">€3</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink7" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information7" id="drink-information7" onclick="drinkHide7()">
+                         <h5>Description</h5>
+                         <p>Pesto Souce, Mozzarella Cheese, Kalamata Olives, Red Peppers, Broccoli.</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+                 <div class="menu-item">
+                    <img class="information-icon" id="information-button8" onclick="drinkShow8()" src="images/information.svg" alt="info-icon">
+                     <img class="product-image" src="images/menu/drinks/vanilla-chai-tea.jpg" alt="vanilla-chai-tea">
+                     <div class="product-details">
+                         <h4 class="item-name">ICE CHAI TEA</h4>
+                         <p class="item-price">€3</p>
+                     </div>
+                     <div class="button"><a class="add-cart drink8" href="javascript:void(0)">Add to cart</a></div>
+                     <div class="product-information drink-information8" id="drink-information8" onclick="drinkHide8()">
+                         <h5>Description</h5>
+                         <p>Italian Presto Souce, Mozzarela Cheese, Spinach</p>
+                         <h5>Allergens</h5>
+                         <p>MILK, EGG, SOY</p>
+                     </div>
+                 </div>
+             </div>
+             <hr class="space">
+        </div>
+    </div>
+    <!--footer section-->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="jobs.html">jobs</a></li>
+            </ul>
+            <p>Let's be friends. Follow us. <span class="underline"> #DiMarios </span></p>
+            <div class="social">
+                <img src="images/facebook.svg" alt="facebook">
+                <img src="images/instagram.svg" alt="instagram">
+                <img src="images/twitter.svg" alt="twitter">
+            </div>
+    </footer>
+
+
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/cart.js"></script>
+
+
+
+</body>
+
+</html>
